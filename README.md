@@ -1,26 +1,28 @@
-# Trivia-Game
-Main repository for Trivia Game (PMU) - ПРОЧЕТИ ВНИМАТЕЛНО!
+# Trivia Conquest: Legacy Alpha
 
-Когато качваш промени описвай подробно кои файлове променяш, за да знаем какво да променяме обратно в нашите си проекти
+Welcome to the Alpha version of our historic/geopolitics trivia game. This repository serves as the stable baseline of the project—originally conceived as a university project—before its transition into a fully-fledged Live Service mobile game.
 
-Теглиш **app** папката както и всеки файл освен readme.md и ги слагаш в твоята папка с проекта (десен бутон в android studio **open in -> explorer**)
+## 📌 About This Version
+This branch represents the core engine and mechanics of the game in its initial phase. It features a robust matchmaking system, custom UI elements, and a functioning database architecture for competitive trivia.
 
-#to commit - бутоните на български, по-добре оформен и изпълващо меню, точни бутони по местата им
-TODO ефекти, картата и страните
+## 🚀 Current Features
+*   **Ranked & Normal Modes:** ELO-based matchmaking for competitive play and casual lobbies for practice.
+*   **Immersive UI:** Full-screen portrait mode with custom-built layouts (Action Bar removed for a clean, historic aesthetic).
+*   **Dynamic Question Difficulty:** System allows toggling question difficulty (Currently tied to user settings, migrating to ELO-based dynamic scaling).
+*   **Firebase Integration:** Real-time database operations for matchmaking, user profiles, and score tracking.
 
-#Beta 1.2
+## 🛠 Tech Stack
+*   **Platform:** Android (Java/Kotlin)
+*   **Backend:** Firebase Realtime Database / Authentication
+*   **Architecture:** Standard Android Activities (Pre-refactoring)
 
-- Fixed leaderboard button
-- Added points UI
-- Added winner UI
-- Added Question UI
-- Added phase navigators UI
-- Added phase cycle
-- and more
+## 🗺 What's Next (The V2 Roadmap)
+This codebase is currently undergoing a massive structural refactoring to support modern mobile gaming standards. Upcoming features in the main development branch include:
+*   **Modern Navigation:** Migration to a `BottomNavigationView` with Fragment-based architecture.
+*   **Guild System (Дружини):** Clan mechanics where players farm resources ("Bricks") via active play to build and upgrade their Citadel.
+*   **Live Service Economy:** Introduction of a Battle Pass, dual-currency system (Silver/Gold), and seasonal resets (Hall of Fame).
+*   **Territory Conquest Mode:** A hex-based global map where guilds battle for regions via asynchronous trivia sieges.
+*   **Room Codes:** Custom lobby generation for direct friend challenges and streamer integration.
 
-TODO:
-- Update attack logic
-- Defend mechanic
-- Login database
-- Online mode
-- APK file
+---
+*Note: Due to security reasons, `google-services.json` is excluded from this repository. To run this project locally, you must provide your own Firebase configuration file.*
